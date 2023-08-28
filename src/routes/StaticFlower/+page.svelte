@@ -1,3 +1,8 @@
+<script>
+  import Flower from "$lib/images/Flower.png";
+  import Perfume from "$lib/images/Perfume.png";
+</script>
+
 <ul class="navbar">
   <li class="navItem navItem-1"><a href="/StaticFlower">Home</a></li>
   <li class="navItem navItem-2"><a href="/StaticFlower">New Collection</a></li>
@@ -19,28 +24,28 @@
   </p>
 </div>
 
-<img class="Image" src="src/Resources/Flower.png" alt="Flower" />
-<img
-  class="Image Perfume"
-  src="src/Resources/Perfume.png"
-  alt="Perfume Bottle"
-/>
+<img class="Image" src={Flower} alt="Flower" />
+<img class="Image Perfume" src={Perfume} alt="Perfume Bottle" />
 
 <div class="PerfumeDetails">
   <div class="ItemPerfumeName">Kenzo Pink Hanae</div>
   <button class="Buy">Buy Now</button>
 </div>
 
-<style>
-  :root {
-    background-color: #efcdfa;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+<svelte:head>
+  <style>
+    body {
+      background-color: #efcdfa;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  </style>
+</svelte:head>
 
+<style>
   a {
     position: relative;
     text-decoration: none;
