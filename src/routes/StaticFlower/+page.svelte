@@ -32,16 +32,20 @@
   <button class="Buy">Buy Now</button>
 </div>
 
-<style>
-  :root {
-    background-color: #efcdfa;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+<svelte:head>
+  <style>
+    body {
+      background-color: #efcdfa;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  </style>
+</svelte:head>
 
+<style>
   a {
     position: relative;
     text-decoration: none;
