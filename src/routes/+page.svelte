@@ -1,6 +1,6 @@
 <div>
   <ul>
-    <li><a href="Positioning">Positioning Examples</a></li>
+    <li><a href="positioning/static">CSS Positioning</a></li>
     <li><a href="StaticFlower">Perfume Website</a></li>
   </ul>
 </div>
