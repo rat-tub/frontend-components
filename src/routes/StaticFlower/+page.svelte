@@ -4,13 +4,20 @@
   <li class="navItem navItem-3"><a href="/StaticFlower">Accessories</a></li>
 </ul>
 
-<!-- <div class="innerPage">
+<div class="innerPage">
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil, neque
-    accusamus asperiores sint corporis rem nemo cum ratione fuga earum
-    praesentium! Consequuntur amet aspernatur, et corporis ipsam sint? Nostrum.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit magni odit
+    maxime, voluptatem placeat eligendi rerum excepturi, officia veniam, a
+    aperiam illum! Vitae totam minima maxime eius nisi quibusdam libero est,
+    velit, aliquid, eum non tempore fugit inventore molestiae maiores nemo
+    assumenda quos dignissimos ipsa iure vel iste. Aspernatur, fuga unde!
+    Incidunt laboriosam eligendi magni facere facilis, amet nihil ut at expedita
+    vitae beatae, doloribus accusantium ullam, modi est doloremque! Veniam magni
+    rem sequi ratione quo nisi molestiae illum quis? Quibusdam ea maxime
+    repudiandae, fugit quo sit! Nam ducimus molestias, quam deleniti soluta
+    nihil voluptate sequi enim autem, optio totam!
   </p>
-</div> -->
+</div>
 
 <img class="Image" src="src/Resources/Flower.png" alt="Flower" />
 <img
@@ -21,6 +28,7 @@
 
 <div class="PerfumeDetails">
   <div class="ItemPerfumeName">Kenzo Pink Hanae</div>
+  <button class="Buy">Buy Now</button>
 </div>
 
 <style>
@@ -63,10 +71,10 @@
   .navbar {
     list-style: none;
     display: flex;
-    font-size: 25px;
+    font-size: 18px;
     position: relative;
     justify-content: center;
-    left: 50%;
+    left: 48.5%;
     transform: translate(-50%, 0);
     top: 0;
   }
@@ -81,32 +89,59 @@
     width: 200px;
     justify-content: center;
     align-items: center;
-    left: 50%;
+    left: 62%;
     transform: translate(-50%, 50%);
     top: -5%;
   }
 
   .Perfume {
     width: 175px;
-    left: 48%;
+    left: 60%;
     top: 14%;
-    box-shadow: 10%;
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.18));
   }
 
-  /* .innerPage {
+  .innerPage {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
-    padding: 25px;
-    max-width: 250px;
+    padding: 25px 25px;
+    max-width: 500px;
+    height: 550px;
+    border-radius: 8px;
     background-color: white;
-  } */
+    padding-right: 12%;
+  }
 
   .ItemPerfumeName {
-    position: absolute;
+    position: relative;
     align-items: center;
-    justify-content: center;
-    left: 48.1%;
+    left: 84.57%;
     transform: translate(-50%, 50%);
-    top: 85%;
+    top: -45px;
     font-weight: bold;
+  }
+
+  .Buy {
+    position: relative;
+    transform: translate(-50%, 50%);
+    left: 39.5%;
+    top: -128px;
+    width: 140px;
+    height: 38px;
+    border-radius: 250px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 14px;
+    background-color: #efcdfa;
+    border: none;
+    cursor: pointer;
+  }
+
+  .Buy:hover {
+    transition: 0.2s ease-in-out;
+    color: white;
   }
 </style>
