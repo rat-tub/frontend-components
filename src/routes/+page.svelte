@@ -1,6 +1,7 @@
 <div>
   <ul>
-    <li><a href="/Positioning">Positioning Examples</a></li>
+    <li><a href="Positioning">Positioning Examples</a></li>
+    <li><a href="StaticFlower">Perfume Website</a></li>
   </ul>
 </div>
 
