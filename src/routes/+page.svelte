@@ -2,6 +2,7 @@
   <ul>
     <li><a href="positioning/static">CSS Positioning</a></li>
     <li><a href="StaticFlower">Perfume Website</a></li>
+    <li><a href="KausthubhTascTemplate1">KausthubhTascTemplate1</a></li>
   </ul>
 </div>
 
