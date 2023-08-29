@@ -9,23 +9,34 @@
   </div>
 </nav>
 
+<svelte:head
+  ><title>TASC</title>
+  <style>
+    :root {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      background-color: black;
+      color: white;
+    }
+  </style>
+</svelte:head>
+
 <style>
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  :root {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-color: black;
-    color: white;
+
+  li {
+    display: inline-block;
   }
 
   .navbar {
-    display: inline;
+    display: flex;
     position: relative;
     justify-content: space-between;
     background-color: aqua;
     align-items: center;
+    padding: 5%;
   }
 </style>
