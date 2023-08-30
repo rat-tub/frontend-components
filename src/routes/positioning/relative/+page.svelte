@@ -8,7 +8,7 @@
 </p>
 
 <section>
-  <div class="container">
+  <div>
     <div class="item item-1">1</div>
     <div class="item item-2">2</div>
     <div class="item item-3">3</div>
