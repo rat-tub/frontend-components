@@ -1,8 +1,14 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <div>
-  <ul>
-    <li><a href="positioning/static">CSS Positioning</a></li>
-    <li><a href="StaticFlower">Perfume Website</a></li>
-  </ul>
+  <ol>
+    <li><a href="{base}/positioning/static">CSS Positioning</a></li>
+    <li><a href="{base}/StaticFlower">Perfume Website</a></li>
+    <li><a href="{base}/tasc-templates">TASC Templates</a></li>
+    <li><a href="{base}/components">Components</a></li>
+  </ol>
 </div>
 
 <style>
