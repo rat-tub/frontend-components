@@ -1,9 +1,3 @@
-<script>
-  import bgAI from "$lib/images/bgAI.jpg";
-  // This is how you import the image ig idk why it's not working
-  const imgurl = new URL("$lib/images/bgAI.jpg", import.meta.url).href;
-</script>
-
 <svelte:head>
   <title>TASC</title>
   <style>
@@ -30,9 +24,7 @@
   </div>
 </nav>
 
-<!-- <img src={bgAI} alt="AI background" /> -->
-<!-- I want to set a background image to this class="content" -->
-<main class="content" />
+<main class="background" style="" />
 
 <style>
   * {
@@ -43,11 +35,21 @@
     padding: 0;
   }
 
+  .background {
+    background-image: url($lib/images/bgAI.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
   .navbar {
     display: flex;
-    position: relative;
+    position: fixed;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    width: 100%;
     color: white;
   }
 
@@ -79,11 +81,5 @@
     text-decoration: none;
     color: #fefdfd;
     padding: 1rem;
-  }
-
-  /* Here i set the background image to that url but it gives me error the image is not found */
-  .content {
-    background-image: url({imgurl});
-    width: 100%;
   }
 </style>
