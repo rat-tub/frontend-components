@@ -1,5 +1,9 @@
 <script>
+<<<<<<< Updated upstream
   import tasc from "$lib/images/tasc-low-quality.jpg";
+=======
+  import task from "$lib/images/tasc-low-quality.jpg";
+>>>>>>> Stashed changes
 </script>
 
 <svelte:head>
@@ -17,9 +21,13 @@
 </svelte:head>
 
 <nav class="navbar">
+<<<<<<< Updated upstream
   <img src={tasc} alt="tasc logo" class="brand-title" />
   <input type="checkbox" class="toggle-menu" />
   <div class="hamburger" />
+=======
+  <img class="brand-title" src={task} alt="logoTask" />
+>>>>>>> Stashed changes
   <div class="nav-links">
     <ul>
       <li><a href="/">Home</a></li>
@@ -60,6 +68,7 @@
     background-blend-mode: darken;
     background-repeat: repeat;
     width: 100%;
+    height: 12vh;
     color: white;
     height: 8vh;
   }
@@ -69,13 +78,21 @@
     width: 60px;
     border-radius: 5px;
     position: absolute;
+    width: 70px;
+    border-radius: 10px;
     left: 0;
     font-size: 1.35rem;
+<<<<<<< Updated upstream
     margin: 1rem;
+=======
+    margin: 1.5rem;
+>>>>>>> Stashed changes
     justify-self: flex-start;
+    cursor: pointer;
   }
 
   .nav-links {
+    position: absolute;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -84,17 +101,23 @@
   .nav-links ul {
     align-items: center;
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     height: 100%;
+<<<<<<< Updated upstream
     gap: 10px;
+=======
+>>>>>>> Stashed changes
   }
 
   .nav-links li {
     list-style: none;
+    height: 100%;
   }
 
   .nav-links li a {
+<<<<<<< Updated upstream
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -194,5 +217,15 @@
       transform: rotate(-45deg);
       top: 10px;
     }
+=======
+    font-size: 16px;
+    height: 100%;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.5rem;
+>>>>>>> Stashed changes
   }
 </style>

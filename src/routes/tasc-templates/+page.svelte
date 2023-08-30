@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <script>
   import { base } from "$app/paths";
 </script>
@@ -9,6 +10,11 @@
         >Kausthubh Tasc Template1</a
       >
     </li>
+=======
+<div>
+  <ul>
+    <li><a href="tasc-templates/KausthubhTascTemplate1">Template 1</a></li>
+>>>>>>> Stashed changes
   </ul>
 </div>
 
