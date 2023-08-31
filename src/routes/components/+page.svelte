@@ -5,6 +5,7 @@
 <div>
   <ol>
     <li><a href="{base}/components/buttons">Buttons</a></li>
+    <li><a href="{base}/components/theme">Theme</a></li>
   </ol>
 </div>
 
