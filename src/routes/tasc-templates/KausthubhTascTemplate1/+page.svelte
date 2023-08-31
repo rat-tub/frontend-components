@@ -1,9 +1,5 @@
 <script>
-<<<<<<< Updated upstream
   import tasc from "$lib/images/tasc-low-quality.jpg";
-=======
-  import task from "$lib/images/tasc-low-quality.jpg";
->>>>>>> Stashed changes
 </script>
 
 <svelte:head>
@@ -21,13 +17,9 @@
 </svelte:head>
 
 <nav class="navbar">
-<<<<<<< Updated upstream
   <img src={tasc} alt="tasc logo" class="brand-title" />
   <input type="checkbox" class="toggle-menu" />
   <div class="hamburger" />
-=======
-  <img class="brand-title" src={task} alt="logoTask" />
->>>>>>> Stashed changes
   <div class="nav-links">
     <ul>
       <li><a href="/">Home</a></li>
@@ -42,7 +34,7 @@
 
 <style>
   * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -82,11 +74,7 @@
     border-radius: 10px;
     left: 0;
     font-size: 1.35rem;
-<<<<<<< Updated upstream
     margin: 1rem;
-=======
-    margin: 1.5rem;
->>>>>>> Stashed changes
     justify-self: flex-start;
     cursor: pointer;
   }
@@ -96,19 +84,17 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .nav-links ul {
-    align-items: center;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
     height: 100%;
-<<<<<<< Updated upstream
     gap: 10px;
-=======
->>>>>>> Stashed changes
   }
 
   .nav-links li {
@@ -117,12 +103,14 @@
   }
 
   .nav-links li a {
-<<<<<<< Updated upstream
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
     border-radius: 200px;
     height: 100%;
   }
@@ -132,7 +120,7 @@
     transition: 0.3s;
   }
   .toggle-menu {
-    opacity: 0;
+    opacity: 1;
     position: relative;
     top: 100%;
     width: 30px;
@@ -217,15 +205,5 @@
       transform: rotate(-45deg);
       top: 10px;
     }
-=======
-    font-size: 16px;
-    height: 100%;
-    /* font-weight: bold; */
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 1.5rem;
->>>>>>> Stashed changes
   }
 </style>
