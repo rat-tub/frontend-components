@@ -5,6 +5,7 @@
 <div>
     <ol>
         <li><a href="{base}/css/positioning/static">CSS Positioning</a></li>
+        <li><a href="{base}/css/box">Interactive CSS GUI</a></li>
         <li><a href="{base}/css/flexbox">Flexbox</a></li>
     </ol>
 </div>
