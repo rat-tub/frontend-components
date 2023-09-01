@@ -18,9 +18,10 @@
      */
     $: {
         if (selected === true) {
-            if (stack.children.length < $count) {
+            while (stack.children.length < $count) {
                 stack.children = [...stack.children, structuredClone(smallStack)];
-            } else if (stack.children.length > $count) {
+            }
+            while (stack.children.length > $count) {
                 stack.children.pop();
                 stack = stack;
             }
@@ -56,7 +57,7 @@
             align-content:  {stack.boxInfo['align-content']};
             width: {stack.boxInfo.width.value + stack.boxInfo.width.unit};
             height: {stack.boxInfo.height.value + stack.boxInfo.height.unit};
-            border: {stack.boxInfo.border.value + stack.boxInfo.border.unit} solid black;
+            border-width: {stack.boxInfo.border.value + stack.boxInfo.border.unit};
             margin: {stack.boxInfo.margin.value + stack.boxInfo.margin.unit};
             padding: {stack.boxInfo.padding.value + stack.boxInfo.padding.unit}"
 >
@@ -68,7 +69,6 @@
 
 <style lang="postcss">
     .container {
-        @apply border-2 border-black dark:border-white bg-black dark:bg-white bg-opacity-0 hover:bg-opacity-20;
-        /*  padding: 10%; */
+        @apply border-2 border-black dark:border-white bg-black dark:bg-white bg-opacity-0 dark:bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-20;
     }
 </style>
