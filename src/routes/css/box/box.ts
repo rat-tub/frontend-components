@@ -42,50 +42,49 @@ export interface FlexBoxStackInterface {
 export const smallBox: BoxInterface = {
   display: "block",
   width: {
-    value: 80,
-    unit: "px",
+    value: 8,
+    unit: "rem",
   },
   height: {
-    value: 80,
-    unit: "px",
+    value: 8,
+    unit: "rem",
   },
   padding: {
-    value: 10,
-    unit: "px",
+    value: 2,
+    unit: "rem",
   },
   border: {
-    value: 2,
-    unit: "px",
+    value: 0.25,
+    unit: "rem",
   },
   margin: {
     value: 0,
-    unit: "px",
+    unit: "rem",
   },
 };
 
 export const initialFlexBox = {
   display: "flex",
   "flex-direction": "row",
-  "flex-wrap": "wrap",
   width: {
-    value: 80,
-    unit: "px",
+    value: 8,
+    unit: "rem",
   },
   height: {
-    value: 80,
-    unit: "px",
+    value: 8,
+    unit: "rem",
   },
   padding: {
-    value: 10,
-    unit: "px",
+    value: 2,
+    unit: "rem",
   },
   border: {
-    value: 2,
-    unit: "px",
+    value: 0.25,
+    unit: "rem",
   },
   margin: {
     value: 0,
-    unit: "px",
+    unit: "rem",
   },
 };
 
@@ -132,20 +131,52 @@ export const Options: any = {
       "space-evenly",
     ],
   },
+  unit: {
+    options: ["vw", "vh", "%", "px", "em", "rem"],
+    vw: {
+      range: [0, 100],
+      step: 2,
+    },
+    vh: {
+      range: [0, 100],
+      step: 2,
+    },
+    "%": {
+      range: [0, 100],
+      step: 2,
+    },
+    px: {
+      range: [0, 1200],
+      step: 4,
+    },
+    em: {
+      range: [0, 80],
+      step: 1,
+    },
+    rem: {
+      range: [0, 80],
+      step: 1,
+    },
+  },
   width: {
     options: ["vw", "vh", "%", "px", "em", "rem"],
+    scale: [1, 1],
   },
   height: {
     options: ["vw", "vh", "%", "px", "em", "rem"],
+    scale: [1, 1],
   },
   padding: {
     options: ["vw", "vh", "%", "px", "em", "rem"],
+    scale: [0.2, 0.5],
   },
   border: {
     options: ["vw", "vh", "%", "px", "em", "rem"],
+    scale: [0.1, 0.25],
   },
   margin: {
     options: ["vw", "vh", "%", "px", "em", "rem"],
+    scale: [0.2, 0.5],
   },
 };
 
