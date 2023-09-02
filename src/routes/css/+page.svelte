@@ -4,10 +4,9 @@
 
 <div>
     <ol>
-        <li><a href="{base}/css">CSS</a></li>
-        <li><a href="{base}/StaticFlower">Perfume Website</a></li>
-        <li><a href="{base}/tasc-templates">TASC Templates</a></li>
-        <li><a href="{base}/components">Components</a></li>
+        <li><a href="{base}/css/positioning/static">CSS Positioning</a></li>
+        <li><a href="{base}/css/box">Interactive CSS GUI</a></li>
+        <li><a href="{base}/css/flexbox">Flexbox</a></li>
     </ol>
 </div>
 
