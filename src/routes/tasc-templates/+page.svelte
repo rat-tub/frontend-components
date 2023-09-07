@@ -3,16 +3,12 @@
 </script>
 
 <div>
-  <ul>
-    <li>
-      <a href="{base}/tasc-templates/KausthubhTascTemplate1"
-        >Kausthubh Tasc Template1</a
-      >
-      <a href="{base}/tasc-templates/tasc-template-2"
-        >Kausthubh Tasc Template2</a
-      >
-    </li>
-  </ul>
+  <ol>
+    <li><a href="{base}/tasc-templates/KausthubhTascTemplate1">1</a></li>
+    <li><a href="{base}/tasc-templates/tasc-template-2">2</a></li>
+    <li><a href="{base}/tasc-templates/test-layout">3</a></li>
+    <li><a href="{base}/tasc-templates/tasc-template-3">4</a></li>
+  </ol>
 </div>
 
 <style>
@@ -21,16 +17,5 @@
     padding: 10%;
     border: 10px solid rgb(233, 156, 156);
     margin: 10%;
-  }
-
-  div ul {
-    list-style-type: none;
-  }
-
-  div li a {
-    display: block;
-  }
-  div li a:hover {
-    color: aliceblue;
   }
 </style>
