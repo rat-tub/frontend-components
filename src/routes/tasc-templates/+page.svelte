@@ -3,13 +3,12 @@
 </script>
 
 <div>
-  <ul>
-    <li>
-      <a href="{base}/tasc-templates/KausthubhTascTemplate1"
-        >Kausthubh Tasc Template1</a
-      >
-    </li>
-  </ul>
+  <ol>
+    <li><a href="{base}/tasc-templates/KausthubhTascTemplate1">1</a></li>
+    <li><a href="{base}/tasc-templates/tasc-template-2">2</a></li>
+    <li><a href="{base}/tasc-templates/test-layout">3</a></li>
+    <li><a href="{base}/tasc-templates/tasc-template-3">4</a></li>
+  </ol>
 </div>
 
 <style>
