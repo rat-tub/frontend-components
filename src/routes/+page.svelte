@@ -1,13 +1,13 @@
 <script>
-  import { base } from "$app/paths";
+  import { base } from '$app/paths';
 </script>
 
 <div>
   <ol>
-    <li><a href="{base}/css">CSS</a></li>
-    <li><a href="{base}/StaticFlower">Perfume Website</a></li>
-    <li><a href="{base}/tasc-templates">TASC Templates</a></li>
     <li><a href="{base}/components">Components</a></li>
+    <li><a href="{base}/css">CSS</a></li>
+    <li><a href="{base}/tasc-templates">TASC Templates</a></li>
+    <li><a href="{base}/templates">Templates/Mockup Pages</a></li>
   </ol>
 </div>
 

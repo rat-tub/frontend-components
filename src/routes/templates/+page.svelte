@@ -4,7 +4,7 @@
 
 <div>
   <ol>
-    <li><a href="{base}/tasc-templates/kausthubh4">Kausthubh Current</a></li>
+    <li><a href="{base}/templates/StaticFlower">Perfume Website</a></li>
   </ol>
 </div>
 

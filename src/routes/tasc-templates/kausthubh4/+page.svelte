@@ -1,6 +1,24 @@
+<script lang="ts">
+  import { darkTheme } from '$lib/stores/theme';
+  import logoLight from '$lib/assets/TASCLogoLight.png';
+  import logoDark from '$lib/assets/TASCLogoDark.png';
+  import ThemeToggle2 from '$lib/components/theme/ThemeToggle2.svelte';
+</script>
+
 <svelte:head>
   <title>TASC</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Monoton&display=swap" rel="stylesheet" />
+
   <style>
+    :root {
+      --primary: #282ca4;
+      --secondary: #1bffff;
+    }
+    * {
+      font-family: 'Inter';
+    }
     body {
       margin: 0;
       width: 100vw;
@@ -17,49 +35,32 @@
 </svelte:head>
 
 <nav class="navbar">
-  <div class="logo"><span>TASC</span></div>
+  <div class="logo">
+    {#if $darkTheme === false}
+      <img src={logoLight} alt="TASC logo - light theme" style="height: 2rem; flex-shrink: 0;" />
+    {:else}
+      <img src={logoDark} alt="TASC logo - light theme" style="height: 2rem; flex-shrink: 0;" />
+    {/if}
+  </div>
 
   <ul class="nav-links">
     <input type="checkbox" id="checkbox_toggle" />
     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
     <div class="menu">
-      <li><a href="">Home</a></li>
-      <li><a href="/">About</a></li>
-
-      <li class="services">
-        <a href="/">Services</a>
-      </li>
-
-      <li><a href="/">Pricing</a></li>
-      <li><a href="/">Contact</a></li>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#top">About</a></li>
+      <li><a href="#top">Contact</a></li>
+      <li><ThemeToggle2 /></li>
     </div>
   </ul>
 
-  <button
-    class="btn absolute right-0 mr-6 px-4 py-1.5 rounded-full border-2 border-white font-semibold"
-    >SignUp</button
-  >
+  <button class="btn absolute right-0 mr-6 px-4 py-1.5 rounded-full border-2 border-white font-semibold">SignUp</button>
 </nav>
-<!-- FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Inter&family=Monoton&display=swap"
-  rel="stylesheet"
-/>
-<!-- FONTS END -->
 
 <div class="main-text"><h1>Welcome to <br /><span>TASC</span></h1></div>
 
 <style>
-  * {
-    box-sizing: border-box;
-    /* border: red 1px solid; */
-  }
-  :root {
-    --primary: #282ca4;
-    --secondary: #1bffff;
-  }
   .navbar {
     display: flex;
     align-items: center;
@@ -67,6 +68,7 @@
     padding: 20px;
     color: #fff;
   }
+
   .nav-links li {
     display: flex;
     justify-content: center;
@@ -74,7 +76,7 @@
   }
 
   span {
-    font-family: "Monoton";
+    font-family: 'Monoton';
     font-weight: 400;
     background: linear-gradient(var(--primary) 0%, var(--secondary) 100%);
     background-clip: border-box;
@@ -114,7 +116,7 @@
     padding: 5px 10px;
   }
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     display: none;
   }
 
@@ -124,10 +126,6 @@
     font-size: 24px;
     user-select: none;
     margin-top: 10px;
-  }
-  * {
-    font-family: "Inter";
-    /* border: red 1px solid; */
   }
 
   .main-text h1 {
@@ -142,7 +140,7 @@
     justify-content: center;
     align-items: center;
   }
-  /* APPLYING MEDIA QUERIES */
+
   @media (max-width: 768px) {
     .btn,
     .logo {
@@ -166,7 +164,7 @@
       margin-top: 12px;
     }
 
-    input[type="checkbox"]:checked ~ .menu {
+    input[type='checkbox']:checked ~ .menu {
       display: block;
     }
 
