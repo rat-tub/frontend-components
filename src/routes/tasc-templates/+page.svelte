@@ -1,13 +1,10 @@
 <script>
-  import { base } from "$app/paths";
+  import { base } from '$app/paths';
 </script>
 
 <div>
   <ol>
-    <li><a href="{base}/tasc-templates/KausthubhTascTemplate1">1</a></li>
-    <li><a href="{base}/tasc-templates/tasc-template-2">2</a></li>
-    <li><a href="{base}/tasc-templates/test-layout">3</a></li>
-    <li><a href="{base}/tasc-templates/tasc-template-3">4</a></li>
+    <li><a href="{base}/tasc-templates/kausthubh4">Kausthubh Current</a></li>
   </ol>
 </div>
 
