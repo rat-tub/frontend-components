@@ -1,27 +1,16 @@
 <script>
-  import Flower from "$lib/images/Flower.png";
-  import Perfume from "$lib/images/Perfume.png";
+  import Flower from '$lib/images/Flower.png';
+  import Perfume from '$lib/images/Perfume.png';
 </script>
 
 <ul class="navbar">
-  <li class="navItem navItem-1"><a href="/StaticFlower">Home</a></li>
-  <li class="navItem navItem-2"><a href="/StaticFlower">New Collection</a></li>
-  <li class="navItem navItem-3"><a href="/StaticFlower">Accessories</a></li>
+  <li class="navItem navItem-1"><a href={null}>Home</a></li>
+  <li class="navItem navItem-2"><a href={null}>New Collection</a></li>
+  <li class="navItem navItem-3"><a href={null}>Accessories</a></li>
 </ul>
 
 <div class="innerPage">
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit magni odit
-    maxime, voluptatem placeat eligendi rerum excepturi, officia veniam, a
-    aperiam illum! Vitae totam minima maxime eius nisi quibusdam libero est,
-    velit, aliquid, eum non tempore fugit inventore molestiae maiores nemo
-    assumenda quos dignissimos ipsa iure vel iste. Aspernatur, fuga unde!
-    Incidunt laboriosam eligendi magni facere facilis, amet nihil ut at expedita
-    vitae beatae, doloribus accusantium ullam, modi est doloremque! Veniam magni
-    rem sequi ratione quo nisi molestiae illum quis? Quibusdam ea maxime
-    repudiandae, fugit quo sit! Nam ducimus molestias, quam deleniti soluta
-    nihil voluptate sequi enim autem, optio totam!
-  </p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit magni odit maxime, voluptatem placeat eligendi rerum excepturi, officia veniam, a aperiam illum! Vitae totam minima maxime eius nisi quibusdam libero est, velit, aliquid, eum non tempore fugit inventore molestiae maiores nemo assumenda quos dignissimos ipsa iure vel iste. Aspernatur, fuga unde! Incidunt laboriosam eligendi magni facere facilis, amet nihil ut at expedita vitae beatae, doloribus accusantium ullam, modi est doloremque! Veniam magni rem sequi ratione quo nisi molestiae illum quis? Quibusdam ea maxime repudiandae, fugit quo sit! Nam ducimus molestias, quam deleniti soluta nihil voluptate sequi enim autem, optio totam!</p>
 </div>
 
 <img class="Image" src={Flower} alt="Flower" />
@@ -39,8 +28,7 @@
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
   </style>
 </svelte:head>
@@ -54,7 +42,7 @@
   }
 
   a:after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: black;
     height: 3px;
@@ -86,7 +74,7 @@
 
   .navItem {
     padding: 17px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
   }
 
   .Image {
@@ -136,8 +124,7 @@
     width: 140px;
     height: 38px;
     border-radius: 250px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
     font-size: 14px;
     background-color: #efcdfa;
