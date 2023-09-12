@@ -48,9 +48,9 @@
     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
     <div class="menu">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#top">About</a></li>
-      <li><a href="#top">Contact</a></li>
+      <li><a href={null}>Home</a></li>
+      <li><a href={null}>About</a></li>
+      <li><a href={null}>Contact</a></li>
       <li><ThemeToggle2 /></li>
     </div>
   </ul>
