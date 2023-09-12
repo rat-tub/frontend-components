@@ -1,15 +1,18 @@
 <script lang="ts">
-  import { darkTheme } from '$lib/stores/theme';
-  import logoLight from '$lib/assets/TASCLogoLight.png';
-  import logoDark from '$lib/assets/TASCLogoDark.png';
-  import ThemeToggle2 from '$lib/components/theme/ThemeToggle2.svelte';
+  import { darkTheme } from "$lib/stores/theme";
+  import logoLight from "$lib/assets/TASCLogoLight.png";
+  import logoDark from "$lib/assets/TASCLogoDark.png";
+  import ThemeToggle2 from "$lib/components/theme/ThemeToggle2.svelte";
 </script>
 
 <svelte:head>
   <title>TASC</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Monoton&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Monoton&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
     :root {
@@ -17,7 +20,7 @@
       --secondary: #1bffff;
     }
     * {
-      font-family: 'Inter';
+      font-family: "Inter";
     }
     body {
       margin: 0;
@@ -34,12 +37,18 @@
   </style>
 </svelte:head>
 
-<nav class="navbar">
+<nav
+  class="flex items-center justify-center p-[20px] text-black dark:text-white"
+>
   <div class="logo">
     {#if $darkTheme === false}
-      <img src={logoLight} alt="TASC logo - light theme" style="height: 2rem; flex-shrink: 0;" />
+      <img
+        src={logoLight}
+        alt="TASC logo - light theme"
+        style="height: 2rem;"
+      />
     {:else}
-      <img src={logoDark} alt="TASC logo - light theme" style="height: 2rem; flex-shrink: 0;" />
+      <img src={logoDark} alt="TASC logo - dark theme" style="height: 2rem;" />
     {/if}
   </div>
 
@@ -48,47 +57,48 @@
     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
     <div class="menu">
-      <li><a href={null}>Home</a></li>
-      <li><a href={null}>About</a></li>
-      <li><a href={null}>Contact</a></li>
-      <li><ThemeToggle2 /></li>
+      <li class="flex justify-center items-center">
+        <a
+          href={null}
+          class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black"
+          >Home</a
+        >
+      </li>
+      <li class="flex justify-center items-center">
+        <a
+          href={null}
+          class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black"
+          >About</a
+        >
+      </li>
+      <li class="flex justify-center items-center">
+        <a
+          href={null}
+          class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black"
+          >Contact</a
+        >
+      </li>
+      <li class="flex justify-center items-center"><ThemeToggle2 /></li>
     </div>
   </ul>
 
-  <button class="btn absolute right-0 mr-6 px-4 py-1.5 rounded-full border-2 border-white font-semibold">SignUp</button>
+  <button
+    class="btn absolute right-0 mr-6 px-4 py-1.5 rounded-full border-2 border-black font-semibold dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
+    >SignUp</button
+  >
 </nav>
 
 <div class="main-text"><h1>Welcome to <br /><span>TASC</span></h1></div>
 
 <style>
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: #fff;
-  }
-
-  .nav-links li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   span {
-    font-family: 'Monoton';
+    font-family: "Monoton";
     font-weight: 400;
     background: linear-gradient(var(--primary) 0%, var(--secondary) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  .nav-links li a {
-    color: #fff;
-    padding: 5px 10px;
-  }
-
   /* LOGO */
   .logo {
     position: absolute;
@@ -105,9 +115,7 @@
   }
 
   .menu li a:hover {
-    background-color: #ffffff;
     border-radius: 5px;
-    color: black;
     font-weight: 600;
     transition: 0.3s ease;
   }
@@ -116,7 +124,7 @@
     padding: 5px 10px;
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     display: none;
   }
 
@@ -164,7 +172,7 @@
       margin-top: 12px;
     }
 
-    input[type='checkbox']:checked ~ .menu {
+    input[type="checkbox"]:checked ~ .menu {
       display: block;
     }
 
