@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { darkTheme } from "$lib/stores/theme";
-  import logoLight from "$lib/assets/TASCLogoLight.png";
-  import logoDark from "$lib/assets/TASCLogoDark.png";
-  import ThemeToggle2 from "$lib/components/theme/ThemeToggle2.svelte";
+  import { darkTheme } from '$lib/stores/theme';
+  import logoLight from '$lib/assets/TASCLogoLight.png';
+  import logoDark from '$lib/assets/TASCLogoDark.png';
+  import ThemeToggle2 from '$lib/components/theme/ThemeToggle2.svelte';
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
       --secondary: #1bffff;
     }
     * {
-      font-family: "Inter";
+      font-family: 'Inter';
     }
     body {
       margin: 0;
@@ -72,7 +72,7 @@
 
 <style>
   span {
-    font-family: "Monoton";
+    font-family: 'Monoton';
     font-weight: 400;
     background: linear-gradient(var(--primary) 0%, var(--secondary) 100%);
     background-clip: border-box;
@@ -97,7 +97,7 @@
     padding: 5px 10px;
   }
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     display: none;
   }
 
@@ -141,7 +141,7 @@
       margin-top: 12px;
     }
 
-    input[type="checkbox"]:checked ~ .menu {
+    input[type='checkbox']:checked ~ .menu {
       display: block;
     }
 

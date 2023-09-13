@@ -4,14 +4,14 @@
 
   $: {
     if (menuToggle) {
-      transform = "none";
+      transform = 'none';
     } else {
-      transform = "translate(100%, 0)";
+      transform = 'translate(100%, 0)';
     }
   }
 </script>
 
-<ul class="menu" style="transform: {transform}">
+<ul class="menu" style="transform: {transform}; height:100vh">
   <slot />
 </ul>
 
