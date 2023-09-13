@@ -32,15 +32,15 @@
         <img src={logoDark} alt="TASC logo - dark theme" style="height: 2rem;" />
       {/if}
     </div>
-    <div class="hidden md:flex">
+    <div class="hidden md:flex gap-6">
       <li class="flex justify-center items-center">
-        <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">Home</a>
+        <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black rounded-lg duration-350 ease-in-out">Home</a>
       </li>
       <li class="flex justify-center items-center">
-        <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">About</a>
+        <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black rounded-lg duration-350 ease-in-out">About</a>
       </li>
       <li class="flex justify-center items-center">
-        <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">Contact</a>
+        <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black rounded-lg duration-350 ease-in-out">Contact</a>
       </li>
     </div>
     <div class="md:hidden">
