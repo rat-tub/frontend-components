@@ -9,10 +9,7 @@
   <title>TASC</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter&family=Monoton&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Monoton&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -37,55 +34,38 @@
   </style>
 </svelte:head>
 
-<nav
-  class="flex items-center justify-center p-[20px] text-black dark:text-white"
->
-  <div class="logo">
+<nav class="flex items-center justify-between p-4 text-black dark:text-white">
+  <div class="order-1">
     {#if $darkTheme === false}
-      <img
-        src={logoLight}
-        alt="TASC logo - light theme"
-        style="height: 2rem;"
-      />
+      <img src={logoLight} alt="TASC logo - light theme" style="height: 2rem;" />
     {:else}
       <img src={logoDark} alt="TASC logo - dark theme" style="height: 2rem;" />
     {/if}
   </div>
 
-  <ul class="nav-links">
-    <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  <div class="order-last sm:order-2">
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-    <div class="menu">
-      <li class="flex justify-center items-center">
-        <a
-          href={null}
-          class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black"
-          >Home</a
-        >
-      </li>
-      <li class="flex justify-center items-center">
-        <a
-          href={null}
-          class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black"
-          >About</a
-        >
-      </li>
-      <li class="flex justify-center items-center">
-        <a
-          href={null}
-          class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black"
-          >Contact</a
-        >
-      </li>
-      <li class="flex justify-center items-center"><ThemeToggle2 /></li>
-    </div>
-  </ul>
+      <div class="menu">
+        <li class="flex justify-center items-center">
+          <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">Home</a>
+        </li>
+        <li class="flex justify-center items-center">
+          <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">About</a>
+        </li>
+        <li class="flex justify-center items-center">
+          <a href={null} class="text-black dark:text-white px-[10px] py-[5px] hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">Contact</a>
+        </li>
+        <li class="flex justify-center items-center"><ThemeToggle2 /></li>
+      </div>
+    </ul>
+  </div>
 
-  <button
-    class="btn absolute right-0 mr-6 px-4 py-1.5 rounded-full border-2 border-black font-semibold dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
-    >SignUp</button
-  >
+  <div class="order-3 sm:order-2">
+    <button class="btn px-4 py-1.5 rounded-full border-2 border-black font-semibold dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white">SignUp</button>
+  </div>
 </nav>
 
 <div class="main-text"><h1>Welcome to <br /><span>TASC</span></h1></div>
@@ -98,13 +78,6 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  /* LOGO */
-  .logo {
-    position: absolute;
-    left: 0;
-    margin-left: 25px;
-    font-size: 32px;
   }
 
   /* NAVBAR MENU */
@@ -149,11 +122,7 @@
     align-items: center;
   }
 
-  @media (max-width: 768px) {
-    .btn,
-    .logo {
-      margin-top: 20px;
-    }
+  @media (max-width: 639px) {
     .menu {
       display: none;
       position: absolute;
