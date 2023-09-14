@@ -21,12 +21,12 @@
   </style>
 </svelte:head>
 
-<nav class="flex justify-between items-center h-10 mx-5 my-2 md:mx-10 md:my-3">
+<nav class="flex justify-between items-center h-10 mx-5 my-3 md:mx-10 md:mb-4 md:mt-6">
   <div>
     {#if $darkTheme === false}
-      <img src={logoLight} alt="TASC logo - light theme" class="h-6" />
+      <img src={logoLight} alt="TASC logo - light theme" class="h-6 md:h-8" />
     {:else}
-      <img src={logoDark} alt="TASC logo - dark theme" class="h-6" />
+      <img src={logoDark} alt="TASC logo - dark theme" class="h-6 md:h-8" />
     {/if}
   </div>
 
@@ -40,103 +40,4 @@
   </div>
 </nav>
 
-<hr class="mx-1 sm:mx-2" />
-
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
-<div>asdf</div>
+<hr class="mx-1 sm:mx-2 dark:border-zinc-800" />
