@@ -13,5 +13,14 @@
 
 body {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-  @apply bg-white dark:bg-black text-black dark:text-white;
+  @apply bg-white dark:bg-zinc-900 text-black dark:text-white;
+
+}
+
+.custom-shadow {
+  box-shadow: 20px 20px 40px 10px rgba(220, 220, 220, 0.3), -2px -2px 20px 0 rgba(220, 220, 220, 0.3);
+}
+
+.custom-shadow-black {
+  box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.2), -2px -2px 20px 0 rgba(0, 0, 0, 0.2);
 }

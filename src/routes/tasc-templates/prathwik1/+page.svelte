@@ -1,6 +1,7 @@
 <script lang="ts">
   import Hamburger from '$lib/components/hamburger/Hamburger.svelte';
   import MenuWrapper from './MenuWrapper.svelte';
+  import PersonCard from '$lib/components/personcard/PersonCard.svelte';
   let menuToggle: boolean;
 
   import ThemeToggle2 from '$lib/components/theme/ThemeToggle2.svelte';
@@ -40,4 +41,6 @@
   </div>
 </nav>
 
-<hr class="mx-1 sm:mx-2 dark:border-zinc-800" />
+<hr class="m-4 sm:m-3 dark:border-zinc-800" />
+
+<PersonCard />
