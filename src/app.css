@@ -12,8 +12,9 @@
 }
 
 body {
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-  @apply bg-white  text-black dark:text-white dark:bg-zinc-900;
+  /*transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;*/
+  @apply transition-colors duration-200 ease-in-out;
+  @apply bg-white dark:bg-[#121212] text-black dark:text-white;
 }
 
 .custom-shadow {
