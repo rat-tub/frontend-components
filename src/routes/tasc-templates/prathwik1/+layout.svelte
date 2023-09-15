@@ -8,6 +8,7 @@
   import { darkTheme } from '$lib/stores/theme';
   import logoLight from '$lib/assets/TASCLogoLight.png';
   import logoDark from '$lib/assets/TASCLogoDark.png';
+  import HRwithText from '$lib/components/hr/HRwithText.svelte';
 </script>
 
 <svelte:head>
@@ -21,12 +22,12 @@
   </style>
 </svelte:head>
 
-<nav class="flex justify-between items-center h-10 mx-5 my-3 md:mx-10 md:mb-4 md:mt-6">
+<nav class="flex justify-between items-center h-10 mx-5 mt-3 md:mx-10 md:mb-4 md:mt-6">
   <div class="w-32">
     {#if $darkTheme === false}
       <img src={logoDark} alt="TASC logo - light theme" class="h-6 md:h-8" />
     {:else}
-      <img src={logoLight} alt="TASC logo - dark theme" class="h-6 md:h-8" />
+      <img src={logoDark} alt="TASC logo - dark theme" class="h-6 md:h-8" />
     {/if}
   </div>
 
@@ -40,6 +41,6 @@
   </div>
 </nav>
 
-<hr class="mx-1 sm:mx-2 dark:border-zinc-800" />
+<HRwithText>DEPARTMENT of AIML</HRwithText>
 
 <slot />

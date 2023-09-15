@@ -12,6 +12,7 @@
 }
 
 body {
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  /*transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;*/
+  @apply transition-colors duration-200 ease-in-out;
   @apply bg-white dark:bg-black text-black dark:text-white;
 }
