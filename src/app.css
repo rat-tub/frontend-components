@@ -13,8 +13,7 @@
 
 body {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-  @apply bg-white dark:bg-zinc-900 text-black dark:text-white;
-
+  @apply bg-white  text-black dark:text-white dark:bg-zinc-900;
 }
 
 .custom-shadow {
