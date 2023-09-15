@@ -1,36 +1,12 @@
 <script lang="ts">
   import Card from '$lib/components/profileCard2/Card.svelte';
+  import { team } from './team';
 </script>
 
 <div class="grid-container pt-5 px-4">
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
+  {#each team as profile}
+    <Card {...profile} />
+  {/each}
 </div>
 
 <style>
