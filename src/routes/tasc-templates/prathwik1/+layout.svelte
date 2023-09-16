@@ -21,9 +21,9 @@
     }
   </style>
 </svelte:head>
-
-<nav class="flex justify-between items-center h-10 mx-5 mt-3 md:mx-10 md:mb-4 md:mt-6">
-  <div class="w-32">
+<!-- bg-[#ECDBFF] dark:bg-[#000015] -->
+<nav class="flex justify-between items-center h-10 mx-5 mt-3 md:mx-10 md:mb-4 md:mt-6 ">
+  <div class="w-32 ">
     {#if $darkTheme === false}
       <img src={logoDark} alt="TASC logo - light theme" class="h-6 md:h-8" />
     {:else}
@@ -41,6 +41,6 @@
   </div>
 </nav>
 
-<HRwithText>DEPARTMENT of AIML</HRwithText>
+<!-- <HRwithText>DEPARTMENT of AIML</HRwithText> -->
 
 <slot />
