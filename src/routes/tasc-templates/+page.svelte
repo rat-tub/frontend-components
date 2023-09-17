@@ -6,6 +6,7 @@
   <ol>
     <li><a href="{base}/tasc-templates/kausthubh4">Kausthubh Current</a></li>
     <li><a href="{base}/tasc-templates/prathwik1">Prathwik</a></li>
+    <li><a href="{base}/tasc-templates/final">Final</a></li>
   </ol>
 </div>
 

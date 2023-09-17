@@ -16,12 +16,12 @@
     body {
       margin: 0;
       padding: 0;
-
       /* font-family: 'Avenir Next', 'Avenir', sans-serif; */
     }
   </style>
 </svelte:head>
 
+<!-- bg-[#ECDBFF] dark:bg-[#000015] -->
 <nav class="flex justify-between items-center h-10 mx-5 mt-3 md:mx-10 md:mb-4 md:mt-6">
   <div class="w-32">
     {#if $darkTheme === false}
