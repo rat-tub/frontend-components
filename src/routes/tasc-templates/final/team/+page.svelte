@@ -13,8 +13,8 @@
 
 <!-- <div class="grid-container gap-y-5 gap-x-5 p-16"></div> -->
 <div class="grid-container pt-5 px-4">
-  {#each team as profile}
-    <Card {...profile} />
+  {#each team as profile, index}
+    <Card {...profile} lazy={index>4}/>
   {/each}
 </div>
 
