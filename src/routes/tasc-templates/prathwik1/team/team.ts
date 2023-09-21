@@ -13,8 +13,8 @@ export interface Profile {
 export const team: Profile[] = [
   {
     image: 'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?cs=srgb&dl=pexels-sindre-fs-1040881.jpg&fm=jpg',
-    name: 'Prathwik Kushal Kumar',
-    role: 'Technical Secretary',
+    name: 'Nope',
+    role: 'Nobody',
   },
   {
     image: 'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?cs=srgb&dl=pexels-sindre-fs-1040881.jpg&fm=jpg',
